@@ -29,7 +29,7 @@ def execute():
     number_of_files= (len(onlyfiles))
     os.system("ncftpput -u 2217188 -p states123 f8-preview.biz.nf /ulmesp.co.nf/uploads ~/Desktop/uploads/*")
     print(str(i) +" minute passed")
-    file = open("/home/sagun/Desktop/uploads/index.php",'r')
+    file = open("/path/Desktop/uploads/index.php",'r')
     x=""
     y='}?>\n </body> \n </html>'
     count=0
