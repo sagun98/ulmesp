@@ -24,7 +24,7 @@ def execute():
     i=i+1
     onlyfiles = next(os.walk("/home/sagun/Desktop/uploads"))[2]
     for values in  onlyfiles:
-        n=os.path.join("/home/sagun/Desktop/uploads",values)
+        n=os.path.join("#path/uploads",values)
         yen="last modified: %s" % time.ctime(os.path.getmtime(n))
     number_of_files= (len(onlyfiles))
     os.system("ncftpput -u 2217188 -p states123 f8-preview.biz.nf /ulmesp.co.nf/uploads ~/Desktop/uploads/*")
@@ -42,7 +42,7 @@ def execute():
     x=x+'echo "'+str(yen)+'";'+"\n"+y
     file.close()
 
-    superkek= open("/home/sagun/Desktop/uploads/index.php",'w')
+    superkek= open("#path/uploads/index.php",'w')
     superkek.write(x)
     superkek.close()
     
